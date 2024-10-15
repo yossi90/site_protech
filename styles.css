@@ -19,7 +19,7 @@ header {
 
 /* Логотип на больших экранах */
 .logo img {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
@@ -61,7 +61,7 @@ section {
 .map-container {
     position: relative;
     width: 100%;  /* Растянуть карту на всю ширину родительского контейнера */
-    padding-bottom: 40%;  /* Пропорция ~2.5:1, меньше по высоте */
+    padding-bottom: 30%;  /* Пропорция меньше по высоте */
     height: 0;
     overflow: hidden;
     margin-top: 20px;
