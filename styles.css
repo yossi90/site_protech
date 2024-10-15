@@ -12,8 +12,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: white;  /* Белый фон */
+    color: black;  /* Текст станет черным для контраста */
+    border-bottom: 1px solid #ddd;  /* Добавляем легкую границу снизу */
 }
 
 .logo img {
@@ -24,8 +25,13 @@ header {
 
 nav a {
     margin-left: 15px;
-    color: white;
+    color: black;
     text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;  /* Эффект при наведении */
 }
 
 /* Основные секции */
