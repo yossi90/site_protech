@@ -36,13 +36,30 @@
         <h2>Контакты</h2>
         <p>Телефон: +7 (495) 123-45-67</p>
         <p>Email: info@yourcompany.ru</p>
-        <form>
-            <input type="text" placeholder="Ваше имя" required>
-            <input type="email" placeholder="Ваш email" required>
-            <textarea placeholder="Сообщение"></textarea>
-            <button type="submit">Отправить</button>
-        </form>
+
+        <!-- Карта Google -->
+        <div id="map" style="width: 100%; height: 400px;"></div>
     </section>
+
+    <!-- Подключение API Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh2H2k6yroDHCJo8Vh5Sr1aHxAdgzvNM8&callback=initMap" 
+        async defer></script>
+    <script type="text/javascript">
+        function initMap() {
+            const location = { lat: 55.72780274151597, lng: 37.68816360904939 }; // Координаты (Москва)
+    
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location,
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Наш офис",
+            });
+        }
+</script>
 
     <footer>
         <p>© 2024 Все права защищены.</p>
