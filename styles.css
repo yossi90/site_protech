@@ -17,11 +17,19 @@ header {
     border-bottom: 1px solid #ddd;  /* Добавляем легкую границу снизу */
 }
 
+/* Логотип на больших экранах */
 .logo img {
-    max-width: 100%;
+    width: 200px;
     height: auto;
-    display: block;
 }
+
+/* Логотип на мобильных устройствах */
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px; /* Меньший размер для мобильных */
+    }
+}
+
 
 nav a {
     margin-left: 15px;
